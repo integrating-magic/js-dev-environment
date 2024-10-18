@@ -10,6 +10,7 @@
     "deploy-to-fm": "npm run build && npm run upload",
     "build": "parcel build index.html",
     "upload": "node ./scripts/upload",
+		"generate-script-steps": "node ./scripts/generate-script-steps",
     "clear-cache": "rm -rf .parcel-cache dist",
     "reset-dev": "npm run clear-cache && npm run start",
     "start-fm-dev": "node ./scripts/start-fm-dev",

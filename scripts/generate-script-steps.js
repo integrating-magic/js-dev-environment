@@ -9,7 +9,7 @@ function pbcopy(data) {
 function convertClipboardToFM() {
   exec(
     "osascript -e 'set the clipboard to (do shell script \"pbpaste\" as «class XMSS»)'",
-    (error, stdout, stderr) => {
+    (error) => {
       if (error) {
         console.error(`exec error: ${error}`);
         return;
